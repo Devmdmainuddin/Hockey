@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.2.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/101cdeab15.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
     <script>
         tailwind.config = {
           theme: {
@@ -26,8 +27,8 @@
     <header class=" ">
         <div class="max-w-[1440px] py-8 lg:mx-[135px] mx-5">
           <nav class="">
-            <div class="flex justify-between items-center">
-              <div class="dropdown">
+            <div class="flex justify-between items-center relative">
+              <!-- <div class="dropdown">
                 <a tabindex="0" class=" text-black text-4xl font-extrabold"><i class="fa-solid fa-bars md:hidden inline-block mr-3"></i> Hockey <span class="text-red-500">’</span>s</a>
                 <ul tabindex="0" class="menu flex justify-center items-center flex-col menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                   <li><a class="hover:text-red-500 hover:bg-transparent text-red-500 font-Manrope ">home</a></li>   
@@ -36,11 +37,11 @@
                     <li><a class="hover:text-red-500 hover:bg-transparent text-[#424247] font-Manrope">Blog</a></li>
                     <li><a class="hover:text-red-500 hover:bg-transparent text-[#424247] font-Manrope">contact</a></li>
                 </ul>
-              </div>
+              </div> -->
+              <a  class=" text-black text-4xl font-extrabold"> Hockey <span class="text-red-500">’</span>s</a>
                 
-                
-                <div class="hidden  md:flex">
-                  <ul class="menu menu-horizontal px-1 font-Manrope">
+                <div class=" menu hidden bg-slate-100 lg:bg-transparent p-4 lg:p-0 lg:flex flex-col lg:flex-row absolute lg:static top-full left-0 right-0 z-50 transition-all duration-700 translate-y-4 lg:translate-y-0">
+                  <ul class="flex flex-col lg:flex-row  gap-y-2 lg:gap-x-6  font-Manrope">
                     <li><a class="hover:text-red-500 hover:bg-transparent text-red-500 font-Manrope">home</a></li>   
                     <li><a class="hover:text-red-500 hover:bg-transparent text-[#424247] font-Manrope">about</a></li>
                     <li><a class="hover:text-red-500 hover:bg-transparent text-[#424247] font-Manrope">pages</a></li>
@@ -48,8 +49,9 @@
                     <li><a class="hover:text-red-500 hover:bg-transparent text-[#424247] font-Manrope">contact</a></li>
                   </ul>
                 </div>
-                <div class="">
-                  <i class="fa-solid fa-magnifying-glass mr-6 hidden md:inline-block text-[#89898B] w-6 h-6"></i>
+                <i class=" menubar fa-solid fa-bars lg:hidden inline-block mr-3"></i>
+                <div class="lg:block hidden">
+                  <i class="fa-solid fa-magnifying-glass mr-5 hidden lg:inline-block text-[#89898B] w-6 h-6"></i>
                   <a class="btn bg-red-500 text-white font-bold  hover:text-red-500 hover:border-red-500 hover:bg-transparent rounded-[8px] capitalize px-6 py-4 text-center">Sing in</a>
                 </div>
               </div>
@@ -488,9 +490,10 @@
             </div>
             
           </div>
+
         </div>
         
       </footer>  
-    
+    <script src="main.js"></script>
 </body>
 </html>
